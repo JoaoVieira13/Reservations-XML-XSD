@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="empresa">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="alojamentos" maxOccurs="50">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="alojamento">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ordem_preferencia" maxOccurs="5">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="nome_alojamento" type="xs:string"></xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="reservas">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="reserva">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="nr_hospedes" type="xs:integer"></xs:element>
+                                                                <xs:element name="loc_hospede" type="xs:string"></xs:element>
+                                                                <xs:element name="pais_hospede" type="xs:string"></xs:element>
+                                                                <xs:element name="nome_hospede" type="xs:string"></xs:element>
+                                                                <xs:element name="idade_hospede" type="xs:integer"></xs:element>
+                                                                <xs:element name="preco" type="xs:integer"></xs:element>
+                                                                <xs:element name="nr_semana">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:integer">
+                                                                            <xs:minInclusive value="1"></xs:minInclusive>
+                                                                            <xs:maxInclusive value="52"></xs:maxInclusive>
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

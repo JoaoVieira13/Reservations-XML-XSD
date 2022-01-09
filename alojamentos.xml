@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<empresa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="alojamentos.xsd">
+    <alojamentos>
+        <alojamento>
+            <ordem_preferencia>
+                <nome_alojamento>PelourinhoTurismo</nome_alojamento>
+            </ordem_preferencia>
+            <reservas>
+                <reserva>
+                    <nr_hospedes>13</nr_hospedes>
+                    <loc_hospede>Amarante</loc_hospede>
+                    <pais_hospede>Portugal</pais_hospede>
+                    <nome_hospede>Paulo</nome_hospede>
+                    <idade_hospede>23</idade_hospede>
+                    <preco>15</preco>
+                    <nr_semana>12</nr_semana>
+                </reserva>
+            </reservas>
+        </alojamento>
+    </alojamentos>
+</empresa>
